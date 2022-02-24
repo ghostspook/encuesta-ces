@@ -9,4 +9,9 @@ export default [
     route: 'second-page',
     icon: 'FileIcon',
   },
+  {
+    title: 'Encuestas',
+    route: 'admin-surveys-index',
+    icon: 'EditIcon',
+  },
 ]

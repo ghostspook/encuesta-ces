@@ -42,6 +42,21 @@ const router = new VueRouter({
       },
     },
     {
+      path: '/admin/surveys',
+      name: 'admin-surveys-index',
+      component: () => import('@/views/admin/surveys/Index.vue'),
+      meta: {
+        pageTitle: 'Encuestas',
+        breadcrumb: [
+          {
+            text: 'Encuestas',
+            active: true,
+          },
+        ],
+        requiresAuth: true,
+      },
+    },
+    {
       path: '/login',
       name: 'login',
       component: () => import('@/views/Login.vue'),
